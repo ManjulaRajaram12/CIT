@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/lay_tasklist1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_tasklist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Project Name "/>
+
+            <TextView
+                android:id="@+id/CprojName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_tasklist2"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Task Name "/>
+
+            <TextView
+                android:id="@+id/CTaskname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:textSize="20sp"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_tasklist3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Time Taken "/>
+
+            <TextView
+                android:id="@+id/CtimeTaken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_tasklist4"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+
+                android:textColor="@color/black"
+                android:text="Start Time"/>
+            <TextView
+                android:id="@+id/Cstartedtime"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_tasklist5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="End Time "/>
+
+            <TextView
+                android:id="@+id/Cendtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text=""
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

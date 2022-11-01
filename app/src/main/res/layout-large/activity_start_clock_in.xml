@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StartClockInActivity"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create new Task"
+            android:textColor="@color/white"
+            android:background="#1B7E75"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018"></TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgrund"
+        android:backgroundTint="@color/teal_700"
+        android:orientation="vertical"
+        android:rotationX="0"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <EditText
+            android:id="@+id/projectName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:hint="Project name"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Task name"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/TimeEstimate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Estimated time"
+            android:gravity="center"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+         />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center">
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_startClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="15dp"
+                android:backgroundTint="#4CAF50"
+                android:layout_gravity="center"
+                android:text="Start Task"
+                android:textColor="@color/white"
+                android:textSize="14sp"></Button>
+
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextClock
+            android:id="@+id/CurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:format24Hour="hh:mm:ss"
+            android:hint="time"
+            android:layout_gravity="left"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextClock>
+
+        <TextView
+            android:id="@+id/currentDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:hint="date"
+            android:gravity="right"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task in Progress"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:background="#F44336"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        </TextView>
+
+        <ListView
+            android:id="@+id/taskListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        </ListView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".StartClockInActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task in Progress"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ListView
+                android:id="@+id/taskListView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="@color/teal_200"
+            android:background="@drawable/shbsh"
+
+            android:padding="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Create New Task"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/projectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:hint="project name"
+                    android:textColorHint="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="5dp"
+                    />
+                <EditText
+                    android:id="@+id/taskName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="task name"
+                    android:singleLine="true"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/TimeEstimate"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:hint="estimated time"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+
+                    <TextClock
+                        android:id="@+id/CurrentTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginRight="50dp"
+                        android:format24Hour="hh:mm:ss"
+                        android:hint="time"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextClock>
+                    &lt;!&ndash;  <TextView
+                          android:id="@+id/CurrentTime"
+                          android:layout_width="100dp"
+                          android:layout_height="wrap_content"
+                          android:hint="time"
+                          android:textStyle="bold"
+                          android:textSize="20sp"
+                          >
+
+                      </TextView>
+
+              &ndash;&gt;
+
+                    <TextView
+                        android:id="@+id/btn_startClock"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/backgrund"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="17dp"
+                        android:text="Start Task"
+                        android:textColor="#27B817"
+                        android:textSize="14sp"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/currentDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="35dp"
+                        android:hint="date"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>-->

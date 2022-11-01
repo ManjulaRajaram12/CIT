@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hh"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/twt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/clogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <EditText
+        android:id="@+id/edt_EmpId"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:hint="Employee ID"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twt"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/edt_Password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_EmpId"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/btn_Login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:paddingLeft="80dp"
+        android:paddingTop="8dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Password"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Login"
+        app:layout_constraintVertical_bias="0.064"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/passwrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dp"
+            android:text="Password"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_regLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| New user? register here"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.065"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/twter"
+            android:layout_width="68dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/img_4"
+            app:layout_constraintEnd_toStartOf="@+id/web"
+            app:layout_constraintHorizontal_bias="0.792"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <ImageView
+            android:id="@+id/web"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/img"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <ImageView
+            android:id="@+id/link"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/img_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toEndOf="@+id/web"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="493dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
